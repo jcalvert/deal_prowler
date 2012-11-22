@@ -13,8 +13,9 @@ class WootOff < ActiveRecord::Base
         end
         }.zip(woot_off_json.values)])
     end
-    recent_woot_offs=WootOff.find(:all,'created_at < ?', woot_offs.last.start_date)
-    woot_offs.reject!{|wo| recent_woot_offs.include?(wo)}
+    return if woot_offs.empty?
+    recent_woot_off_ids=WootOff.find(:all,'created_at < ?', woot_offs.last.start_date).collect{|wo| wo.woot_id}
+    woot_offs.reject!{|wo| recent_woot_off_ids.include?(wo.woot_id)}
     woot_offs.each{|wo| wo.save }
   end
 end

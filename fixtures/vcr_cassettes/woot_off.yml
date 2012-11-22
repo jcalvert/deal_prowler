@@ -1,0 +1,52 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://api.woot.com/2/events.json?eventType=WootOff&key=47db9c89c1434acc901e078b39c001ce
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - "*/*"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json; charset=utf-8
+      Connection: 
+      - close
+      Access-Control-Allow-Origin: 
+      - "*"
+      Age: 
+      - "0"
+      Cache-Control: 
+      - max-age=10
+      Date: 
+      - Thu, 22 Nov 2012 14:06:42 GMT
+      X-Forwarded-Server: 
+      - APIWEB004
+      X-Powered-By: 
+      - TurtlesOnTrails
+      X-Varnish: 
+      - "1657615337"
+      X-Woot: 
+      - Monkeys
+      Vary: 
+      - Accept-Encoding
+      X-Amz-Cf-Id: 
+      - DgyXTBWO-yNzsFXm1KGvlSDiWjWEmSIaFJwuQCD2EFvK4kovlIOh_g==
+      Via: 
+      - 1.1 varnish, 1.0 a223062e33743b5c4ba88d0314bb704c.cloudfront.net (CloudFront)
+      X-Cache: 
+      - Miss from cloudfront
+    body: 
+      encoding: US-ASCII
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 22 Nov 2012 14:06:42 GMT
+recorded_with: VCR 2.3.0

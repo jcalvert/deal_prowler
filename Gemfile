@@ -7,7 +7,11 @@ gem 'rails', '3.2.3'
 
 gem 'sqlite3'
 
-
+group :test do
+	gem "shoulda"
+	gem "vcr"
+	gem "webmock", '1.8.11'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
