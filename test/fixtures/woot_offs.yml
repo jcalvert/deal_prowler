@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subtitle: MyString
+  write_up: MyString
+  podcast_title: MyString
+  podcast_teaser: MyString
+  podcast_mp3_url: MyString
+  podcast_ogg_url: MyString
+  type: 
+  woot_id: MyString
+  title: MyString
+  site: MyString
+  start_date: MyString
+  end_date: MyString
+  offers: MyText
+
+two:
+  subtitle: MyString
+  write_up: MyString
+  podcast_title: MyString
+  podcast_teaser: MyString
+  podcast_mp3_url: MyString
+  podcast_ogg_url: MyString
+  type: 
+  woot_id: MyString
+  title: MyString
+  site: MyString
+  start_date: MyString
+  end_date: MyString
+  offers: MyText
